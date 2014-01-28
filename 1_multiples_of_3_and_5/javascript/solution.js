@@ -3,14 +3,14 @@
 
 var SolutionOne = {
 	solve: function() {
-		var i = 1,
+		var i = 999,
 				solution = 0;
 
-		for ( ;i < 1000; ) {
+		for ( ;i > 0; ) {
 			if ((i % 3 === 0) || (i % 5 === 0)) {
 				solution = solution + i;
 			}
-			i = i + 1;
+			i = i - 1;
 		}
 		return solution;
 	}
